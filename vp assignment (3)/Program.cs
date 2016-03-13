@@ -10,7 +10,7 @@ namespace vp_assignment__3_
     {
         static void Main(string[] args)
         {
-            char ch;
+            char chh;
             do
             {
                 int siblings;
@@ -114,9 +114,9 @@ namespace vp_assignment__3_
                 }
 
                 Console.WriteLine("do you want to continue");
-                ch = Convert.ToChar(Console.ReadLine());
+                chh = Convert.ToChar(Console.ReadLine());
             } 
-            while (ch == 'y');
+            while (chh == 'y');
             
             }
         }
