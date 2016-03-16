@@ -67,8 +67,8 @@ namespace Swaping
 {
     class Swap
     {
-        int x;
-        int y;
+        int a;
+        int b;
         int temp;
 
         public void getData()
@@ -76,18 +76,18 @@ namespace Swaping
             Console.WriteLine("\t \t S W A P I N G   W I T H   3 R D   V A R I A B L E  ");
 
             Console.WriteLine("\n Please Enter the Value of 1st Integer");
-            x = Convert.ToInt32(Console.ReadLine());
+            a = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Enter the Value of 2nd Integer");
-            y = Convert.ToInt32(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
         }
 
         public void swaping()
         {
 
-            temp = x;
-            x = y;
-            y = temp;
+            temp = a;
+            a = b;
+            b = temp;
 
         }
         public void ShowData()
