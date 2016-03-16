@@ -1,0 +1,6 @@
+c:\users\muhammad\documents\visual studio 2013\Projects\Swaping\Swaping\bin\Debug\Swaping.exe.config
+c:\users\muhammad\documents\visual studio 2013\Projects\Swaping\Swaping\bin\Debug\Swaping.exe
+c:\users\muhammad\documents\visual studio 2013\Projects\Swaping\Swaping\bin\Debug\Swaping.pdb
+c:\users\muhammad\documents\visual studio 2013\Projects\Swaping\Swaping\obj\Debug\Swaping.csprojResolveAssemblyReference.cache
+c:\users\muhammad\documents\visual studio 2013\Projects\Swaping\Swaping\obj\Debug\Swaping.exe
+c:\users\muhammad\documents\visual studio 2013\Projects\Swaping\Swaping\obj\Debug\Swaping.pdb
