@@ -1,0 +1,6 @@
+c:\users\muhammad\documents\visual studio 2013\Projects\property\property\bin\Debug\property.exe.config
+c:\users\muhammad\documents\visual studio 2013\Projects\property\property\bin\Debug\property.exe
+c:\users\muhammad\documents\visual studio 2013\Projects\property\property\bin\Debug\property.pdb
+c:\users\muhammad\documents\visual studio 2013\Projects\property\property\obj\Debug\property.csprojResolveAssemblyReference.cache
+c:\users\muhammad\documents\visual studio 2013\Projects\property\property\obj\Debug\property.exe
+c:\users\muhammad\documents\visual studio 2013\Projects\property\property\obj\Debug\property.pdb
