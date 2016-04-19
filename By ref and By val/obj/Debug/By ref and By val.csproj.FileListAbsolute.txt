@@ -1,0 +1,6 @@
+c:\users\muhammad\documents\visual studio 2013\Projects\By ref and By val\By ref and By val\bin\Debug\By ref and By val.exe.config
+c:\users\muhammad\documents\visual studio 2013\Projects\By ref and By val\By ref and By val\bin\Debug\By ref and By val.exe
+c:\users\muhammad\documents\visual studio 2013\Projects\By ref and By val\By ref and By val\bin\Debug\By ref and By val.pdb
+c:\users\muhammad\documents\visual studio 2013\Projects\By ref and By val\By ref and By val\obj\Debug\By ref and By val.csprojResolveAssemblyReference.cache
+c:\users\muhammad\documents\visual studio 2013\Projects\By ref and By val\By ref and By val\obj\Debug\By ref and By val.exe
+c:\users\muhammad\documents\visual studio 2013\Projects\By ref and By val\By ref and By val\obj\Debug\By ref and By val.pdb
