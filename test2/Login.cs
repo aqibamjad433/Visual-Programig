@@ -9,40 +9,40 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Net.Wifi;
+using System.Net;
 
 namespace test2
 {
     [Activity(Label = "Login")]
     public class Login : Activity
     {
-        View v;
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
-
-            
-
-
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Login_Success);
             base.OnCreate(savedInstanceState);
+           
             string text = Intent.GetIntExtra("MyData",0).ToString();
+            EditText et1 = FindViewById<EditText>(Resource.Id.IP);
+            EditText et2 = FindViewById<EditText>(Resource.Id.IP2);
+           // EditText et2 = FindViewById<EditText>(Resource.Id.port2);
 
+            
             // Create your application here
+            string hostname = Dns.GetHostName();
+            string IP = Dns.GetHostByName(hostname).AddressList[0].ToString();
+            et1.Text = IP;
 
-            Button bLogout = FindViewById<Button>(Resource.Id.btn_Logout);
+            string hostname2 = Dns.GetHostName();
+            string IP2 = Dns.GetHostByName(hostname).AddressList[0].ToString();
+            et2.Text = IP2;
+            
 
-            bLogout.Click += delegate
-            {
-                BtnClick(v);
-            };
-        }
-
-        public void BtnClick(View v)
-        {
-            var logout = new Intent(this, typeof(MainActivity));
-            logout.PutExtra("Logging Out", "Going back to Login");
-            StartActivity(logout);
 
         }
+
+      
     }
 }
