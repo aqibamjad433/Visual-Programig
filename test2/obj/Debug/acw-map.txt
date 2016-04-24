@@ -1,0 +1,8 @@
+test2.Login, test2;md5e91a1fb5d4507d818fd4c9402ce6121f.Login
+test2.Login, test2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e91a1fb5d4507d818fd4c9402ce6121f.Login
+test2.Login;md5e91a1fb5d4507d818fd4c9402ce6121f.Login
+test2.Login;md5e91a1fb5d4507d818fd4c9402ce6121f.Login
+test2.MainActivity, test2;md5e91a1fb5d4507d818fd4c9402ce6121f.MainActivity
+test2.MainActivity, test2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e91a1fb5d4507d818fd4c9402ce6121f.MainActivity
+test2.MainActivity;md5e91a1fb5d4507d818fd4c9402ce6121f.MainActivity
+test2.MainActivity;md5e91a1fb5d4507d818fd4c9402ce6121f.MainActivity
