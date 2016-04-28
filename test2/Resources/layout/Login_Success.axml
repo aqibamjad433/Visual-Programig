@@ -39,7 +39,7 @@
     <EditText
         android:layout_width="206.0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
+        android:id="@+id/port1"
         android:layout_marginLeft="120dp"
         android:layout_marginTop="-40dp" />
     <TextView
@@ -75,7 +75,14 @@
     <EditText
         android:layout_width="228.0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/editText4"
+        android:id="@+id/port2"
         android:layout_marginLeft="110dp"
         android:layout_marginTop="-35dp" />
+    <Button
+        android:text="Connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_Connect"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="30dp" />
 </LinearLayout>
