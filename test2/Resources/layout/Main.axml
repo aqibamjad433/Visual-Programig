@@ -20,7 +20,8 @@
         android:layout_width="234.5dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="130dp"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="50dp"
+        android:inputType="textPassword" />
     <TextView
         android:text="Password"
         android:textAppearance="?android:attr/textAppearanceLarge"

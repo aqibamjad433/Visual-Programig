@@ -11,5 +11,7 @@ c:\users\muhammad aqib\documents\visual studio 2015\Projects\test2\test2\obj\Deb
 c:\users\muhammad aqib\documents\visual studio 2015\Projects\test2\test2\obj\Debug\R.cs.flag
 c:\users\muhammad aqib\documents\visual studio 2015\Projects\test2\test2\obj\Debug\uploadflags.txt
 C:\Users\Muhammad Aqib\Documents\Visual Studio 2015\Projects\test2\test2\obj\Debug\res\layout\login_success.xml
+C:\Users\Muhammad Aqib\Documents\Visual Studio 2015\Projects\test2\test2\obj\Debug\res\layout\chat.xml
+C:\Users\Muhammad Aqib\Documents\Visual Studio 2015\Projects\test2\test2\obj\Debug\test2.csprojResolveAssemblyReference.cache
 C:\Users\Muhammad Aqib\Documents\Visual Studio 2015\Projects\test2\test2\obj\Debug\test2.dll.mdb
 C:\Users\Muhammad Aqib\Documents\Visual Studio 2015\Projects\test2\test2\bin\Debug\test2.dll.mdb

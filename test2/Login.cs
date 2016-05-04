@@ -82,6 +82,10 @@ namespace test2
             listenSocket.Connect(epRemote);
             Toast.MakeText(this, "Bind successfully", ToastLength.Long).Show();
 
+            var Connect = new Intent(this, typeof(Chat));
+            Connect.PutExtra("MyData", "Data from Login");
+            StartActivity(Connect);
+
 
 
 
