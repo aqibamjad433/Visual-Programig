@@ -17,38 +17,35 @@
         android:id="@+id/send"
         android:layout_marginLeft="280dp"
         android:layout_marginTop="-40dp" />
-    <CheckBox
-        android:text="RSA"
-        android:layout_width="86.0dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/RSA" />
     <TextView
-        android:text="Encrypt"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="RSA"
         android:layout_width="wrap_content"
-        android:layout_height="31.5dp"
-        android:id="@+id/textView1"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp" />
+        android:layout_height="25.5dp"
+        android:id="@+id/textView3"
+        android:layout_marginLeft="130dp"
+        android:textSize="20dp" />
+    <Button
+        android:text="Encrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_Encrypt"
+        android:layout_marginRight="0.0dp" />
     <EditText
         android:layout_width="283.0dp"
         android:layout_height="wrap_content"
         android:id="@+id/encrypt"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="90dp"
         android:layout_marginTop="-40dp" />
-    <TextView
+    <Button
         android:text="Decrypt"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="wrap_content"
-        android:layout_height="32.0dp"
-        android:id="@+id/textView2"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp" />
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_Decrypt" />
     <EditText
         android:layout_width="282.0dp"
         android:layout_height="wrap_content"
         android:id="@+id/decrypt"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="90dp"
         android:layout_marginTop="-40dp" />
     <TextView
         android:text="Chat"

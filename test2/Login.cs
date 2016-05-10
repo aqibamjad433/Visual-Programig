@@ -24,6 +24,7 @@ namespace test2
         IPAddress ipAddress;
         EditText et1, et2;
         IPEndPoint eplocal;
+        Bundle bundle = new Bundle();
 
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -31,6 +32,7 @@ namespace test2
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Login_Success);
             base.OnCreate(savedInstanceState);
+
 
             string text = Intent.GetIntExtra("MyData", 0).ToString();
             EditText et1 = FindViewById<EditText>(Resource.Id.IP);
@@ -80,6 +82,7 @@ namespace test2
 
             var Connect = new Intent(this, typeof(Chat));
             Connect.PutExtra("MyData", "Data from Login");
+            Connect.PutExtra("key", val1);
             StartActivity(Connect);
 
 

@@ -19,49 +19,74 @@ namespace test2
     [Activity(Label = "Chat")]
     public class Chat : Activity
     {
+        int val1;
+        Intent intent = new Intent();
+        
         View v;
-        Socket sck;
+        IPAddress ipAddress;
+        IPEndPoint eplocal;
+        Socket listenSocket = new Socket(AddressFamily.InterNetwork,
+             SocketType.Stream,
+             System.Net.Sockets.ProtocolType.Tcp); //instantiating New socket
+        
         EndPoint epLocal, epRemote;
         byte[] buffer;
-       
+        byte[] encryptedText = null;
+        TextView ChatBox;
+
+        RSACryptoServiceProvider RSA = new RSACryptoServiceProvider();
+        byte[] plainText;
+
+        UnicodeEncoding ByteConverter = new UnicodeEncoding();
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            ipAddress = Dns.Resolve(Dns.GetHostName()).AddressList[0];
+            val1 = int.Parse(intent.GetIntExtra("key", 0).ToString());
+            IPEndPoint epRemote = new IPEndPoint(ipAddress, val1);
             SetContentView(Resource.Layout.Chat);
             base.OnCreate(savedInstanceState);
             EditText message = FindViewById<EditText>(Resource.Id.message);
             Button send = FindViewById<Button>(Resource.Id.send);
-            CheckBox RSA_CB = FindViewById<CheckBox>(Resource.Id.RSA);
+            Button btn_Encrypt = FindViewById<Button>(Resource.Id.btn_Encrypt);
+            Button btn_Decrypt = FindViewById<Button>(Resource.Id.btn_Decrypt);
             EditText encrypt = FindViewById<EditText>(Resource.Id.encrypt);
             EditText decrypt = FindViewById<EditText>(Resource.Id.decrypt);
-            TextView Chat_Box = FindViewById<TextView>(Resource.Id.ChatBox);
+            ChatBox = FindViewById<TextView>(Resource.Id.ChatBox);
 
-            UnicodeEncoding ByteConverter = new UnicodeEncoding();
-            RSACryptoServiceProvider RSA = new RSACryptoServiceProvider();
-            byte[] plainText;
-            byte[] encryptedText;
-            byte[] decryptedText;
+
+            
+            
             plainText = ByteConverter.GetBytes(message.Text);
 
 
 
-            RSA_CB.Click += delegate
+            btn_Encrypt.Click += delegate
             {
                 encryptedText = Encryption(plainText, RSA.ExportParameters(false), false);
                 encrypt.Text = ByteConverter.GetString(encryptedText);
 
-                //decryptedText = Decryption(encryptedText, RSA.ExportParameters(true), false);
-                //decrypt.Text = ByteConverter.GetString(decryptedText);
-            
+                
+           
 
                 //Toast.MakeText(this, "ye le", ToastLength.Long).Show();
             };
 
-           
+            btn_Decrypt.Click += delegate
+            {
+                byte[] decryptedText = Decryption(encryptedText, RSA.ExportParameters(true), false);
+                decrypt.Text = ByteConverter.GetString(decryptedText);
 
-            //send.Click += delegate
-            //{
-            //    Send_Button_Click(v);
-            //};
+
+                Toast.MakeText(this, "ye le ", ToastLength.Long).Show();
+
+            };
+
+
+
+            send.Click += delegate
+            {
+                RSASendbutton_Click(v);
+            };
 
 
         }
@@ -89,11 +114,20 @@ namespace test2
         }
 
 
-        private void RSASendbutton_Click(object sender, EventArgs e)
+        private void RSASendbutton_Click(View  view)
         {
+            eplocal = new IPEndPoint(ipAddress, val1);
+            listenSocket.Connect(epRemote);
+            listenSocket.Bind(eplocal);
             //Convert String into ByteArray
             ASCIIEncoding aEncoding = new ASCIIEncoding();
-            byte[] sending_message = new byte[1500];
+            encryptedText = Encryption(plainText, RSA.ExportParameters(false), false);
+            byte[] sending_message = encryptedText;
+            listenSocket.Send(sending_message);
+
+            ChatBox.Text = ByteConverter.GetString(sending_message);
+
+    //            Toast.MakeText(this, "ye le ", ToastLength.Long).Show();
         }
 
 
