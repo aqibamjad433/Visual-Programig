@@ -1,0 +1,12 @@
+Cryptography_Project.Chat, Cryptography_Project;md56955311a518f3dff338dcabee255be7b.Chat
+Cryptography_Project.Chat, Cryptography_Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56955311a518f3dff338dcabee255be7b.Chat
+Cryptography_Project.Chat;md56955311a518f3dff338dcabee255be7b.Chat
+cryptography_project.Chat;md56955311a518f3dff338dcabee255be7b.Chat
+Cryptography_Project.IP, Cryptography_Project;md56955311a518f3dff338dcabee255be7b.IP
+Cryptography_Project.IP, Cryptography_Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56955311a518f3dff338dcabee255be7b.IP
+Cryptography_Project.IP;md56955311a518f3dff338dcabee255be7b.IP
+cryptography_project.IP;md56955311a518f3dff338dcabee255be7b.IP
+Cryptography_Project.MainActivity, Cryptography_Project;md56955311a518f3dff338dcabee255be7b.MainActivity
+Cryptography_Project.MainActivity, Cryptography_Project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56955311a518f3dff338dcabee255be7b.MainActivity
+Cryptography_Project.MainActivity;md56955311a518f3dff338dcabee255be7b.MainActivity
+cryptography_project.MainActivity;md56955311a518f3dff338dcabee255be7b.MainActivity
